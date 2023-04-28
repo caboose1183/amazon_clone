@@ -13,7 +13,7 @@ function Header() {
     <header>
       {/* Top Nav */}
       <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2">
-        <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
+        <div className="mt-2 flex items-center flex-grow sm:flex-grow-0 mx-6">
           <Image
             src="https://links.papareact.com/f90"
             width={150}
@@ -24,7 +24,7 @@ function Header() {
         </div>
 
         {/* Search */}
-        <div className="bg-yellow-400 hover:bg-yellow-500 hidden cursor-pointer sm:flex items-center h-10 rounded-md flex-grow ml-6">
+        <div className="bg-yellow-400 hover:bg-yellow-500 hidden cursor-pointer sm:flex items-center h-10 rounded-md flex-grow">
           <input
             type="text"
             className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4"

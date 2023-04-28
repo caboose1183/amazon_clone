@@ -1,16 +1,24 @@
+import Banner from "@/components/Banner";
 import Header from "@/components/Header";
+import ProductFeed from "@/components/ProductFeed";
 import Head from "next/head";
 
 export default function Home() {
   return (
-    <main>
+    <div className="bg-gray-100 ">
       <Head>
         <title>Amazone Clone</title>
       </Head>
 
-      {/* Header */}
       <Header />
 
-    </main>
+      <main className="max-w-screen-2xl mx-auto">
+        <Banner />
+
+        {/* Products */}
+
+        <ProductFeed />
+      </main>
+    </div>
   );
 }
