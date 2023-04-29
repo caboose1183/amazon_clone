@@ -27,7 +27,10 @@ function Product({ id, title, price, description, category, image }) {
         {Array(rating)
           .fill()
           .map((_, index) => (
-            <StarIcon className="h-5 text-yellow-500" />
+            <StarIcon
+              className="h-5 text-yellow-500"
+              key={Math.random() * Math.random()}
+            />
           ))}
       </div>
 
