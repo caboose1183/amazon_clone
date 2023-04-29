@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "autoprefixer": "10.4.14",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
     "next": "13.3.1",
     "postcss": "8.4.23",
     "react": "18.2.0",
+    "react-currency-formatter": "^1.1.0",
     "react-dom": "18.2.0",
     "react-responsive-carousel": "^3.2.23",
     "tailwindcss": "3.3.2"
