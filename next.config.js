@@ -2,8 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["links.papareact.com", "fakestoreapi.com"]
-  }
-}
+    domains: ["links.papareact.com", "fakestoreapi.com"],
+  },
+  experimental: {
+    appDir: true,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
