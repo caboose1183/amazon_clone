@@ -12,7 +12,7 @@ const app = !admin.apps.length
     })
   : admin.app();
 
-// establish connection to stripe
+// establish connection to stripe, the secret listener is (listen --forward-to localhost:3000/api/webhook)
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const endpointSecret = process.env.STRIPE_SIGNING_SECRET;
 
