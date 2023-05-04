@@ -1,4 +1,6 @@
-import firebase from "firebase";
+// use old version with compat/app and firestore
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
 
 const firebaseConfig = {
   apiKey: "AIzaSyA-50J5pQ2Cn3HGPShYKQVsufJraGkqfrk",
@@ -8,3 +10,11 @@ const firebaseConfig = {
   messagingSenderId: "946335105771",
   appId: "1:946335105771:web:f690309fff59bb48e034ae",
 };
+
+const app = !firebase.apps.length
+  ? firebase.initializeApp(firebaseConfig)
+  : firebase.app();
+
+const db = app.firestore();
+
+export default db;
